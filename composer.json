@@ -1,0 +1,29 @@
+{
+  "name": "alanretubis/laravel-rete",
+  "description": "A Laravel wrapper for building a Rete-based rule engine",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "AlanRetubis\\LaravelRete\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Alan Teves Retubis",
+      "email": "alanretubis@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AlanRetubis\\LaravelRete\\LaravelReteServiceProvider"
+      ]
+    }
+  }
+}
