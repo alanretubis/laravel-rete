@@ -18,8 +18,8 @@ class RuleController extends Controller
     {
         $request->validate([
             'name' => 'required|string',
-            'conditions' => 'required|array',
-            'actions' => 'required|array',
+            'conditions' => 'required',
+            'actions' => 'required',
         ]);
 
         Rule::create([
