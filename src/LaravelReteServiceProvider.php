@@ -18,5 +18,9 @@ class LaravelReteServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/rete.php', 'rete');
+
+        $this->app->singleton('rete-engine', function () {
+            return new \AlanRetubis\LaravelRete\ReteEngine(); // Corrected namespace
+        });
     }
 }
