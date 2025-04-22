@@ -3,11 +3,11 @@
 namespace AlanRetubis\Rete\Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use AlanRetubis\Rete\Models\Rule;
-use AlanRetubis\Rete\Models\Variable;
-use AlanRetubis\Rete\Facades\ReteEngine;
+use AlanRetubis\LaravelRete\Models\Rule;
+use AlanRetubis\LaravelRete\Models\Variable;
+use AlanRetubis\LaravelRete\Facades\ReteEngine;
 use Orchestra\Testbench\TestCase;
-use AlanRetubis\Rete\ReteServiceProvider;
+use AlanRetubis\LaravelRete\ReteServiceProvider;
 
 class ReteEngineTest extends TestCase
 {
